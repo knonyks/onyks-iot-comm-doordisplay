@@ -2099,6 +2099,151 @@
 				)
 			)
 		)
+		(symbol "Diode:MBR0530"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MBR0530"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "30V 0.5A Schottky Power Rectifier Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MBR0530_0_1"
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MBR0530_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Power_Management:RT9742AGJ5F"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4567,6 +4712,12 @@
 		(uuid "4d67ed57-4209-499c-900e-68faf92250fe")
 	)
 	(junction
+		(at 66.04 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58be5b93-fd05-4b66-b224-b3f1d482f463")
+	)
+	(junction
 		(at 31.75 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5928,6 +6079,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 166.37) (xy 69.85 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fc8f86-7591-461e-95a5-e3085b06a2ba")
+	)
+	(wire
+		(pts
 			(xy 45.72 148.59) (xy 45.72 146.05)
 		)
 		(stroke
@@ -6028,7 +6189,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 166.37) (xy 69.85 166.37)
+			(xy 63.5 166.37) (xy 66.04 166.37)
 		)
 		(stroke
 			(width 0)
@@ -6713,17 +6874,6 @@
 		)
 		(uuid "54f1f9d6-de46-4cce-b135-c66b4e7a9341")
 	)
-	(label "BS"
-		(at 245.11 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5fb8a3ba-872e-488a-a38e-4b4972ae0269")
-	)
 	(label "PREVGL"
 		(at 237.49 95.25 0)
 		(fields_autoplaced yes)
@@ -7169,7 +7319,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "Diode:MBR0530")
 		(at 135.89 147.32 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7179,22 +7329,31 @@
 		(fields_autoplaced yes)
 		(uuid "0556ae7e-42aa-429b-be67-a611eeb6db07")
 		(property "Reference" "D2"
-			(at 135.89 140.97 0)
+			(at 136.2075 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 135.89 143.51 0)
+		(property "Value" "MBR0530"
+			(at 136.2075 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.89 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
 			(at 135.89 147.32 0)
 			(effects
 				(font
@@ -7203,16 +7362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
+		(property "Description" "30V 0.5A Schottky Power Rectifier Diode, SOD-123"
 			(at 135.89 147.32 0)
 			(effects
 				(font
@@ -8301,6 +8451,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dacedcb-221a-45f4-932a-e18b2b4bb634")
+		(property "Reference" "#FLG03"
+			(at 66.04 164.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc54f944-34f7-481e-a3c7-262ad7994c34")
+		)
+		(instances
+			(project "onyks_iot_comm_doordisplay"
+				(path "/8007192c-fd9f-4325-a65a-9f23d4807586"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 74.93 166.37 0)
 		(unit 1)
@@ -8640,7 +8856,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "Diode:MBR0530")
 		(at 135.89 133.35 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8650,22 +8866,31 @@
 		(fields_autoplaced yes)
 		(uuid "4b95d1f0-ee7b-4fd0-ae62-5e52874eb3c3")
 		(property "Reference" "D4"
-			(at 135.89 127 0)
+			(at 136.2075 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 135.89 129.54 0)
+		(property "Value" "MBR0530"
+			(at 136.2075 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.89 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -8674,16 +8899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
+		(property "Description" "30V 0.5A Schottky Power Rectifier Diode, SOD-123"
 			(at 135.89 133.35 0)
 			(effects
 				(font
@@ -9315,7 +9531,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
+		(lib_id "Diode:MBR0530")
 		(at 135.89 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9325,22 +9541,31 @@
 		(fields_autoplaced yes)
 		(uuid "5b8fc23f-5149-4514-bbc6-b2715e383f54")
 		(property "Reference" "D3"
-			(at 135.89 118.11 0)
+			(at 135.5725 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
-			(at 135.89 120.65 0)
+		(property "Value" "MBR0530"
+			(at 135.5725 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 135.89 128.905 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf"
 			(at 135.89 124.46 0)
 			(effects
 				(font
@@ -9349,16 +9574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 135.89 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode"
+		(property "Description" "30V 0.5A Schottky Power Rectifier Diode, SOD-123"
 			(at 135.89 124.46 0)
 			(effects
 				(font
@@ -9428,7 +9644,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 141.9352 156.21 0)
 			(effects
 				(font
@@ -9497,7 +9713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_FFC-FPC:TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal"
 			(at 259.08 64.77 0)
 			(effects
 				(font
